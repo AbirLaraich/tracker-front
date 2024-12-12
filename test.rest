@@ -1,0 +1,98 @@
+ POST https://tracker-api-production-27cf.up.railway.app//api/product
+Content-Type: application/json
+
+{
+    "numProduct": "321",
+    "weight": "5 kg",
+    "numLot": "123",
+    "distributer":{
+        "email":"147",
+        "password":"147",
+        "adresse": "147", 
+        "name":"147",
+        "siret_number":"147"
+    },
+    "delivery_date": null
+
+}
+###
+GET https://tracker-api-production-27cf.up.railway.app//api/products/lot/123
+
+###  
+
+Get https://tracker-api-production-27cf.up.railway.app//api/products/147
+
+###
+
+PUT https://tracker-api-production-27cf.up.railway.app//api/update/product?siretNumber=147&delivery_date=2030-02-01
+
+
+### 
+
+GET https://tracker-api-production-27cf.up.railway.app//api/product/321
+
+###
+GET https://tracker-api-production-27cf.up.railway.app//api/orders/Supplier/123
+
+###
+GET   https://tracker-api-production-27cf.up.railway.app//api/lot/123
+###
+
+###
+
+POST https://tracker-api-production-27cf.up.railway.app//api/lot
+Content-Type: application/json
+
+{
+    "numLot": "123",
+    "name": "Nom du lot",
+    "supplier": {
+        "email": "123",
+        "password": "123",
+        "adresse": "123"
+    },
+    "date_creation": "2020-11-11"
+}
+###
+GET   https://tracker-api-production-27cf.up.railway.app//api/lot/147
+
+###
+
+GET https://tracker-api-production-27cf.up.railway.app//api/lot/no_Order/159
+
+### 
+
+GET https://tracker-api-production-27cf.up.railway.app/api/processedOrder/123
+
+
+###
+
+GET   https://tracker-api-production-27cf.up.railway.app/api/notification/distributer/123
+###
+GET https://tracker-api-production-27cf.up.railway.app/api/notification/distributer/123
+###
+POST  https://tracker-api-production-27cf.up.railway.app/api/notification
+Content-Type: application/json
+
+{
+    "id":25 ,
+    "distributer": "123",
+    "supplier": "123" ,
+    "order" : 38,
+    "isRead": false
+}
+###
+POST  https://tracker-api-production-27cf.up.railway.app/api/notification
+Content-Type: application/json
+
+{
+    "id": 12,
+    "distributer": "123",
+    "supplier": "123" ,
+    "order" : 1,
+    "isRead": false
+}
+###
+PUT  https://tracker-api-production-27cf.up.railway.app/api/notification/update/10
+###
+ GET  https://tracker-api-production-27cf.up.railway.app/api/order/procedssed/19
