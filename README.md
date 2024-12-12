@@ -1,4 +1,7 @@
 # Suivi des Circuits Courts Alimentaires via la Blockchain
+## Démo
+
+![Démonstration de l'application](./assets/videos/VideoApplicationMobile.mp4)
 
 ## Description
 
